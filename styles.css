@@ -1,0 +1,370 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;  
+}
+body{
+    overflow-x: hidden;
+}
+.sectionone{
+    padding: 1em 5em;
+    background-color:black;
+}
+.nav-bar{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+   color:white;
+}
+.list-center{
+  display:flex;  
+  align-items: center;
+}
+.list-right{
+ display:flex;
+ align-items: center;
+}
+li{
+    list-style: none;
+    padding: 0em 1em;
+}
+.bottom{
+    position: absolute;
+    top:28px;
+}
+
+.top{
+    position: relative;
+    left:-20px;
+
+}
+#lang{
+    background-color: black;
+    border:none;
+    color:white;
+}
+.sec1{
+    color:white;
+    display:flex;
+    position:relative;
+}
+h1{
+    font-size:6.25em;
+    padding-top:.75em;
+    padding-bottom: .60em;
+}
+.pone{
+    font-size:1.85em;
+    padding-bottom: 2em;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+span{
+    color:#FF00FF;
+}
+.singleline{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    position:relative;
+    padding:1.5em 0em;
+}
+.singleline li{
+    padding-right: 0;
+}
+.below{
+    position: absolute;
+    bottom:25px;
+}
+.above{
+    position: relative;
+}
+
+.number{
+    font-size:5em;
+    padding-right: .5em;
+}
+.numbers{
+    display:flex;
+    align-items:center;
+    padding-top: 4em;
+    padding-bottom: 2em;
+}
+.line{
+    padding:0em 1.5em;
+}
+.right-front{
+    display: flex;
+}
+.back{
+    position: absolute;
+    left:500px;
+    top:-55px;
+    /*background-color: blue;*/
+}
+.front{
+    position:absolute;
+    left:800px;
+    top:0px;
+
+}
+.sectiontwo{
+    padding: 0; 
+    background-color:black;
+}
+.logo{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #36454F;
+    padding: 4em 3em;
+}
+.sectionthree{
+    color:white;
+    background-color:black;
+   padding: 1em 0em 1em 5em;
+    height: 120vh;
+    display: grid;
+    grid-template-areas: "header header para"
+                         "img    img    img";
+}
+.header{
+    grid-area: header;
+    font-size: 4em;
+    height: 400px;
+    margin-right: 2em;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+}
+.para{
+    grid-area: para;
+    font-size: 2em;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    font-weight: lighter;
+}
+.box{
+    grid-area: img;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    position: relative;
+    padding-bottom: 3em;
+}
+.box1{
+    border: 2px solid white;
+    height: 300px;
+    width:300px;
+    display: grid;
+    place-items: center;
+    background-color: rgba(255,255,255,0.1);
+    font-weight: 900;
+}
+.box2{
+    border: 4px solid white;
+    height: 300px;
+    width:300px;
+    display: grid;
+    place-items: center;
+    position:absolute;
+    top:-50px;
+    left:550px;
+    background-color: rgba(255,255,255,0.4);
+    font-weight: 900;
+    text-align: center;
+}
+.box3{
+    border: 2px solid white;
+    height: 300px;
+    width:300px;
+    display: grid;
+    place-items: center;
+    background-color: rgba(255,255,255,0.1);
+    font-weight: 900;
+    right:100px;
+    position: absolute;
+}
+.sectionfour{
+    height: 200vh;
+    position: relative;
+}
+.matter{
+    align-items: center;
+    justify-content: center;
+    display:grid;
+    text-align: center;
+}
+.headerfour{
+    font-size: 5em;
+    padding: .5em 0em;
+    color:black;
+}
+.parafour{
+    font-size:2.5em;
+    color: black;
+}
+.imgfour img{
+    align-items: center;
+    justify-content: center;
+    display:grid; 
+    position: absolute; 
+    transform: translate(15%,-6%);
+}
+.sectionfive{
+    color:white;
+    height: 200vh;
+    display: grid;
+    grid-template-areas: "matter  matter"
+                         "fivebox fivebox";
+    padding: 1em 5em;
+}
+.matterfive{
+    grid-area: matter;
+}
+.fivebox{
+    grid-area: fivebox;
+    display: grid;
+    grid-template-areas: "fivebox1 fivebox2"
+                         "fivebox3 fivebox4"
+                         "slider   slider";
+    justify-content: center;
+    gap:70px;
+
+}
+.fivebox1{
+   grid-area: fivebox1;
+   border:3px solid white;
+   height: 300px;
+   width: 600px;
+   background-color: rgba(255,255,255,0.4);
+}
+.fivebox2{
+    grid-area: fivebox2; 
+    border:1px solid white; 
+    height: 350px;
+    width: 600px;
+    background-color: rgba(255,255,255,0.1);
+}
+.fivebox3{
+    grid-area: fivebox3;
+    border:1px solid white; 
+    height: 300px;
+    width: 600px; 
+    background-color: rgba(255,255,255,0.1);
+}
+.fivebox4{
+    grid-area: fivebox4; 
+    border:1px solid white; 
+    height: 300px;
+    width: 600px;
+    background-color: rgba(255,255,255,0.1);
+}
+.headerfive{
+    font-size: 4em;
+    text-align: center;
+    padding: .5em 0em;
+}
+.parafive{
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 2em;
+}
+.stars, .content{
+    padding:1em;
+}
+.content{
+    font-size: 1.5em;
+}
+.author{
+    font-size: 1em;
+    padding:1em 2em;
+}
+.slider{
+    display:flex;
+    grid-area: slider;
+    justify-content: center;
+    align-items: center;
+}
+.sectionfive{
+    padding-bottom: 2em;
+    background-color: black;
+}
+.sectionsix{
+    background-color: black;
+    position: relative;
+    height: 100vh;
+    display: grid;
+}
+.frontrect , .backrect{
+    position: absolute;
+}
+
+.backrect > .rect1{
+     width: 1520px;
+}
+.frontrect > .rect2{
+    width:1520px;
+}
+.diamonds{
+    position: absolute;
+    display: flex;
+}
+.right-diamonds{
+    position: absolute;
+    right: -1000px;
+    top:40px;
+}
+.mattersix{
+    position: absolute;
+   color:white;   
+   top:70px;
+   left:150px;
+   text-align: center;
+}
+.black{
+    color:black;
+}
+.headersix{
+    font-size: 4.5em;
+    padding-bottom: 1em;
+}
+.btnsix{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.backsix{
+    position:absolute;
+    left:500px;
+}
+.frontsix{
+    position:absolute;
+    left:520px;
+}
+.arrow{
+    position:absolute;
+    left:650px;
+}
+.footer{
+    height: 25vh;
+    background-color: black;
+    color:white;
+    display: flex;
+    padding:1em 5em;
+    align-items: center;
+}
+.footerlogo{
+    padding-right: 15em;
+}
+.footerlist ul{
+    display:flex;
+}
+
+
+
+
